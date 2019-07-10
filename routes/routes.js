@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const homeController = require('../controllers/home').home;
+const home = require('../controllers/home').home;
 const postTasks = require('../controllers/postTasks').postTasks;
 const getTasks = require('../controllers/getTasks').getTasks;
 const getTaskByName = require('../controllers/getTaskByName').getTaskByName;
@@ -8,7 +8,8 @@ const postTask = require('../controllers/postTask').postTask;
 const deleteTask = require('../controllers/deleteTask').deleteTask;
 const updateTask = require('../controllers/updateTask').updateTask;
 
-router.get('/', homeController);
+//home page
+router.get('/', home);
 //post array of tasks
 router.post("/tasks", postTasks);
 //get all tasks

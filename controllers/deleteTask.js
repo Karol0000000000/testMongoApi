@@ -1,4 +1,4 @@
-const db = require('../database/connect');
+const db = require('../database/database');
 const ObjectId = require("mongodb").ObjectID;
 
 exports.deleteTask = (req, res) => {
